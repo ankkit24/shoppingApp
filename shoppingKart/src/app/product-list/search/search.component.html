@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar Example</title>
+    <style>
+        .search-container {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .search-input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search..." aria-label="Search" [(ngModel)]="searchText">
+        <button class="search-button" type="submit">Search</button>
+    </div>
+
+    <div>
+        Search results for: {{ searchText }}
+    </div>
+
+</body>
+</html>
