@@ -1,0 +1,43 @@
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between buttons */
+}
+
+.help-button,
+.sign-in-button,
+.sign-out-button {
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    color: #007bff;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+
+.help-button:hover,
+.sign-in-button:hover,
+.sign-out-button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart img {
+    height: 30px; /* Adjust size as needed */
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+}
